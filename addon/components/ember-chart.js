@@ -308,12 +308,16 @@ export default Component.extend({
 		this.get('chart').destroy();
 
 		// remove the observers
-		this.addObserver('data', this, this.updateChart);
-		this.addObserver('data.[]', this, this.updateChart);
-		this.removeObserver('model', this, this.updateChart);
-		this.removeObserver('model.[]', this, this.updateChart);
-		this.removeObserver('_page', this, this.updateChart);
-		this.removeObserver('colors.[]', this, this.updateChart);
+		// remove the observers		
+		if (this.get('isModel')) {
+			this.removeObserver('model', this, this.updateChart);
+			this.removeObserver('model.[]', this, this.updateChart);
+			this.removeObserver('_page', this, this.updateChart);
+			this.removeObserver('colors.[]', this, this.updateChart);
+		} else {
+			this.removeObserver('data', this, this.updateChart);
+		  this.removeObserver('data.[]', this, this.updateChart);
+		}
 		this.removeObserver('options', this, this.redrawChart);
 		this.removeObserver('type', this, this.redrawChart);
 	},
