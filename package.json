@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chartjs",
-  "version": "2.8.0",
+  "version": "2.8.1",
   "description": "Ember component for ChartJS",
   "keywords": [
     "ember-addon",
@@ -12,7 +12,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/busybusy/ember-cli-chartjs.git",
+  "repository": "https://github.com/gynzy/ember-cli-chartjs.git",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "ember-cli-htmlbars": "^2.0.1",
-	"ember-cli-babel": "^6.6.0",
-	"chart.js": "2.8.0"
+    "ember-cli-babel": "^6.6.0",
+    "chart.js": "2.8.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

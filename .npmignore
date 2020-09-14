@@ -1,19 +1,21 @@
-/bower_components
-/config/ember-try.js
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
 /dist
-/tests
 /tmp
-**/.gitkeep
-.bowerrc
-.editorconfig
-.ember-cli
-.eslintrc.js
-.gitignore
-.watchmanconfig
-.travis.yml
-bower.json
-ember-cli-build.js
-testem.js
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log*
+yarn-error.log
+testem.log
 
 # ember-try
 .node_modules.ember-try/
